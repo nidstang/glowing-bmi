@@ -10,14 +10,14 @@ describe('BMI tests', () => {
             weight: 50,
             height: 100,
             age: 18,
-            sex: 'F'
+            sex: 'FEMALE'
         });
 
         expect(p).toEqual({
             weight: 50,
             height: 100,
             age: 18,
-            sex: 'F'
+            sex: 'FEMALE'
         });
     });
 
