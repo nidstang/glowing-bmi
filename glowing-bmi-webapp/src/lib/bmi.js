@@ -8,7 +8,7 @@ const getPersonMeasuresFactored = ({ height, weight }) => ([
 
 const subtractAgeFactored = age => acc => R.subtract(acc, age * Constants.AGE_FACTOR);
 
-export const Person = ({ weight, height, age, sex }) => ({
+export const Person = ({ weight = 0, height = 0, age = 0, sex = Constants.FEMALE }) => ({
     weight, height, age, sex
 });
 
