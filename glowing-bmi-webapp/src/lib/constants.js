@@ -25,6 +25,17 @@ export const WEEKLY_EXERCISE = {
     }
 };
 
+export const LOSING_FAT_RATE = {
+    REGULAR: 1,
+    HIGHT: 0.95
+};
+
+export const BODY_MASS_RATE = {
+    LOW: 0.15,
+    MID: 0.2,
+    HIGHT: 0.2,
+};
+
 export default {
     WEIGHT_FACTOR,
     HEIGHT_FACTOR,
@@ -37,4 +48,6 @@ export default {
         return sex === this.FEMALE ? this.FEMALE_MOD : this.MALE_MOD;
     },
     WEEKLY_EXERCISE,
+    LOSING_FAT_RATE,
+    BODY_MASS_RATE,
 };
