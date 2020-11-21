@@ -27,16 +27,16 @@ export const WEEKLY_EXERCISE = {
 
 export const LOSING_FAT_RATE = {
     REGULAR: 1,
-    HIGHT: 0.95
+    HIGH: 0.95
 };
 
 export const BODY_MASS_RATE = {
     LOW: 0.15,
     MID: 0.2,
-    HIGHT: 0.2,
+    HIGH: 0.2,
 };
 
-export default {
+const Constants = {
     WEIGHT_FACTOR,
     HEIGHT_FACTOR,
     AGE_FACTOR,
@@ -51,3 +51,5 @@ export default {
     LOSING_FAT_RATE,
     BODY_MASS_RATE,
 };
+
+export default Constants;

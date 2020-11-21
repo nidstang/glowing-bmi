@@ -17,7 +17,9 @@ const Person = {
     }
 };
 
-export default ({
+
+
+const Factory = ({
     weight = 0,
     height = 0,
     age = 0,
@@ -34,3 +36,5 @@ export default ({
     losingFatRate,
     bodyMassRate,
 }, Person);
+
+export default Factory;

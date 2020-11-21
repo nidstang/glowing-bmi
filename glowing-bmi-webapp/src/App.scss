@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.form {
+  .input, .select {
+    margin: 10px 0;
+  }
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+
+.counter-app {
+  .input {
+    margin-top: 20px;
+  }
+}
