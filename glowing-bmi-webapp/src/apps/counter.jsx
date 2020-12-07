@@ -1,9 +1,11 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import InputCounter from '../components/InputCounter';
-import Storage from '../lib/storage';
 
-const storage = Storage('state');
+// Problem solved
+// import Storage from '../lib/storage';
+
+// const storage = Storage('state');
 
 class CounterApp extends React.Component {
     constructor(props) {
@@ -43,13 +45,13 @@ class CounterApp extends React.Component {
         // v5
         // const { maxWeight } = this.props;
         // this.setState(state => {
-        //     if (state.weight >= maxWeight) return state;
+        //     if (state.weight >= maxWeight) return state; //return; it is gonna work too (Object.assigg)
         //     return { weight: state.weight + 1 }
         // })
 
         // v6
         // const incrementState = (state, props) => {
-        //     if (state.weight >= props.maxWeight) return state;
+        //     if (state.weight >= props.maxWeight) return state; // return; it is gonna work too (Object.assign)
         //     return { weight: state.weight + 1 }
         // };
 
@@ -81,17 +83,17 @@ class CounterApp extends React.Component {
         const { weight } = this.state;
         return (
             <div className="counter-app">
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <InputCounter label="Weight" 
-                        value={weight}
-                        increment={this.increment}
-                        decrement={this.decrement}
-                        reset={this.reset}
-                    
-                    />
+                <Grid container spacing={3}>
+                    <Grid item xs={12}>
+                        <InputCounter label="Weight" 
+                            value={weight}
+                            increment={this.increment}
+                            decrement={this.decrement}
+                            reset={this.reset}
+                        
+                        />
+                    </Grid>
                 </Grid>
-            </Grid>
             </div>
         )
     }
